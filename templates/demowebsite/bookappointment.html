@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+        <title>Domain based counselling system</title>
+      
+        <link rel="stylesheet" href="../static/css/maicons.css">
+      
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+      
+        <link rel="stylesheet" href="../static/vendor/owl-carousel/css/owl.carousel.css">
+      
+        <link rel="stylesheet" href="../static/vendor/animate/animate.css">
+      
+        <link rel="stylesheet" href="../static/css/theme.css">
+    </head>
+    <body>
+        <div class="page-section">
+        <div class="container">
+            <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
+
+            <form class="main-form" action="{% url 'fixappointment' %}" method="post">
+                {% csrf_token %}
+            <div class="row mt-5 ">
+                <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+                <input type="text" class="form-control" name="contact" placeholder="Contact">
+                </div>
+                <div class="col-12 col-sm-6 py-2 wow fadeInRight">
+                <input type="email" class="form-control" name="s_email" placeholder="S_email">
+                </div>
+                <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+                <input type="text" class="form-control" name="mssgs" placeholder="Mssgs">
+                </div>
+                <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+                <input type="text" class="form-control" name="s_name" placeholder="S_name">
+                </div>
+                <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+                <input type="text" class="form-control" name="student_id" placeholder="Student_id">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Confirm</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</html> <!-- .page-section -->

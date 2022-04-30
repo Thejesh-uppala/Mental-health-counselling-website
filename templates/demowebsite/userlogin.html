@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../static/css/login.css">
+    </head>
+    <body>
+        <div class="text-center">
+            <center>
+                {% if msg %}
+                    <h4 style="color:red">{{msg}}</h4>
+                    {% endif %}
+            </center>
+        </div> 
+        <h1 class="ultitle">User login page</h1>
+        <div class="ulog">
+            <button type="submit" class="btn btn-outline-primary">
+                <a href="studentlogin">Student Login</a><br>
+            </button><br>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-outline-primary">
+                <a href="counsellorlogin">Counsellor Login</a><br>
+            </button>
+        </div>
+    </body>
+</html>
