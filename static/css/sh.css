@@ -70,7 +70,7 @@ nav ul li a:hover{
 .flex-container{
   display: flex;
   flex-direction: row ;
-  padding: 
+  padding:10px 
 }
 
 div.sec1 h2{
@@ -98,11 +98,13 @@ div.sec3{
   background: violet;
 }
 /*Keyframe playground
+   /* Safari 4.0 - 8.0 */
+
 p{
   width: 100px;
   height: 100px;
   position :relative;
-  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation: mymove 5s infinite; 
   animation: mymove 0.5s infinite;
 }
 
